@@ -219,7 +219,7 @@ int extractor::run(const ExtractorConfig &extractor_config)
         if (extraction_containers.all_edges_list.empty())
         {
             SimpleLogger().Write(logWARNING) << "The input data is empty, exiting.";
-            return 1;
+            return 2;
         }
 
         extraction_containers.PrepareData(extractor_config.output_file_name,

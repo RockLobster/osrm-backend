@@ -146,7 +146,7 @@ int Prepare::Process(int argc, char *argv[])
     if (edge_list.empty())
     {
         SimpleLogger().Write(logWARNING) << "The input data is empty, exiting.";
-        return 1;
+        return 2;
     }
 
     SimpleLogger().Write() << restriction_list.size() << " restrictions, "
